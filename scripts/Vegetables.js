@@ -13,9 +13,10 @@ export const Veggies = async () => {
 
     const divStringArray = vegetables.map(
         (vegetable) => {
-            return <div>
+            return `<div>
                 <input type="radio" name="vegetable" value="${vegetable.type}"/> ${vegetable.type}
             </div>
+        `
         }
     )
 
