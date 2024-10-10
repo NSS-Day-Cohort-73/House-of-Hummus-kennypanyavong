@@ -14,7 +14,7 @@ export const Sides = async () => {
     const divStringArray = sides.map(
         (side) => {
             return `<div
-                <input type="radio" name="sides" value="${side.title}"/> ${side.title}
+                <input type="radio" name="sides" value="${side.id}"/> ${side.title}
             </div>
         `      
         }
