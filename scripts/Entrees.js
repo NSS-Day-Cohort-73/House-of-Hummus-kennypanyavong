@@ -4,7 +4,6 @@ const handleEntreeChoice = (changeEvent) => {
     if (changeEvent.target.name === "Base Dish") {
         setEntreeChoice(parseInt(changeEvent.target.value))
 }
-    return null
 }
 
 export const Entrees = async () => {

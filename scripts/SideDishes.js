@@ -4,7 +4,6 @@ const handleSideChoice = (changeEvent) => {
     if (changeEvent.target.name === "sides") {
         setSideChoice(parseInt(changeEvent.target.value))
     }
-    return null
 }
 
 export const Sides = async () => {
@@ -13,7 +12,7 @@ export const Sides = async () => {
 
     const divStringArray = sides.map(
         (side) => {
-            return `<div
+            return `<div>
                 <input type="radio" name="sides" value="${side.id}"/> ${side.title}
             </div>
         `      
