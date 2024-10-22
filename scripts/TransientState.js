@@ -1,19 +1,22 @@
-const transientState = {
-    "entrees": null,
-    "vegetables": null,
-    "sides": null
+let transientState = {
+    "entree": "",
+    "vegetable": "",
+    "side": ""
 }
 
 export const setVegetableChoice = (chosenVegetable) => {
-    transientState.vegetables = chosenVegetable
+    transientState.vegetable = chosenVegetable
+    console.log("Vegetable selected:", transientState.vegetable)
 }
 
 export const setSideChoice = (chosenSide) => {
-    transientState.sides = chosenSide
+    transientState.side = chosenSide
+    console.log("Side selected:", transientState.side)
 }
 
 export const setEntreeChoice = (chosenEntree) => {
-    transientState.entrees = chosenEntree
+    transientState.entree = chosenEntree
+    console.log("Entree selected:", transientState.entree)
 }
 
 export const getTransientState = () => {
@@ -21,7 +24,9 @@ export const getTransientState = () => {
 }
 
 export const resetTransientState = () => {
-    transientState.entrees = null
-    transientState.vegetables = null
-    transientState.sides = null
+    transientState.entree = null
+    transientState.vegetable = null
+    transientState.side = null
 }
+
+
