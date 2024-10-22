@@ -4,7 +4,6 @@ const handleVegetableChoice = (changeEvent) => {
     if (changeEvent.target.name === "vegetable") {
         setVegetableChoice(parseInt(changeEvent.target.value))
     }
-    return null
 }
 
 export const Veggies = async () => {
